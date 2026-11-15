@@ -423,6 +423,15 @@ header.solid{background:rgba(7,7,10,.72);backdrop-filter:blur(14px) saturate(1.3
 .work-card li b{font-family:var(--display);font-size:19px;font-weight:600}
 .work-card li span{color:var(--muted);font-size:15px;margin-top:4px}
 @media(max-width:900px){.intern-stats{grid-template-columns:1fr 1fr}.intern-stats div:nth-child(2){border-right:0}.intern-stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}.intern-grid{grid-template-columns:1fr}.role-card,.work-card{padding:24px}.intern{padding-top:6vh}}
+.creds-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.cred{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,138,31,.35);color:var(--ink);text-decoration:none;background:rgba(255,138,31,.06);transition:background .25s,color .25s,border-color .25s}
+.cred span{color:var(--saffron);transition:transform .25s}
+.cred:hover{background:var(--saffron);color:#000;border-color:var(--saffron)}.cred:hover span{color:#000;transform:translate(2px,-2px)}
+.fact .courses{display:block;margin-top:8px;color:var(--muted);font-size:14px}
+.tl-card .creds-row{margin-top:12px}
+.faq details p a{color:var(--saffron);text-decoration:none;white-space:nowrap}
+.all-repos{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-family:var(--mono);font-size:13px;letter-spacing:.05em;color:var(--ink);text-decoration:none;padding:14px 22px;border:1px solid var(--line);border-radius:999px;transition:border-color .25s,color .25s}
+.all-repos:hover{border-color:var(--saffron);color:var(--saffron)}
 /* faq */
 .faq{display:grid;grid-template-columns:.7fr 1.3fr;gap:20px;align-items:start;padding-top:16px}
 .faq-head h3{font-family:var(--display);font-size:clamp(28px,3.4vw,46px);line-height:1;margin-top:14px}
@@ -747,6 +756,7 @@ footer nav a:hover{color:var(--ink)}
         <a class="pc-code" href="https://github.com/Rohansharma52/KrishiMitra" target="_blank" rel="noopener">View code on GitHub <span>↗</span></a>
       </article>
     </div>
+    <a class="all-repos" href="https://github.com/Rohansharma52?tab=repositories" target="_blank" rel="noopener">See all my repositories on GitHub <span>↗</span></a>
   </section>
 
   <!-- 07 JOURNEY -->
@@ -760,7 +770,7 @@ footer nav a:hover{color:var(--ink)}
       <article class="tl-item"><span class="tl-dot"></span><span class="tl-date">2024</span><div class="tl-card"><h3>Started B.Tech CSE (AI &amp; ML)</h3><p>Joined KIET Group of Institutions. CGPA 8.4 through the second year.</p></div></article>
       <article class="tl-item"><span class="tl-dot"></span><span class="tl-date">Jan – Feb 2025</span><div class="tl-card"><h3>First freelance web work</h3><p>Fixed usability and layout issues for an independent client and made the site responsive across devices.</p></div></article>
       <article class="tl-item"><span class="tl-dot"></span><span class="tl-date">Jun – Aug 2025</span><div class="tl-card"><h3>Web Developer Intern · STBG Academy</h3><p>Redesigned site structure and navigation, and handled backend support and maintenance.</p></div></article>
-      <article class="tl-item"><span class="tl-dot"></span><span class="tl-date">Certified</span><div class="tl-card"><h3>AWS Solutions Architect + Cloud Practitioner</h3><p>Two AWS certifications, plus courses in Machine Learning and Data Science.</p></div></article>
+      <article class="tl-item"><span class="tl-dot"></span><span class="tl-date">Certified</span><div class="tl-card"><h3>AWS Solutions Architect + Cloud Practitioner</h3><p>Two AWS certifications, plus courses in Machine Learning and Data Science.</p><span class="creds-row"><a class="cred" href="https://cp.certmetrics.com/amazon/en/public/verify/credential/fd661743e85a4bbaac3bacf95fa0b76b" target="_blank" rel="noopener">Verify AWS SA <span>↗</span></a><a class="cred" href="https://cp.certmetrics.com/amazon/en/public/verify/credential/3b0a0f6e329a4d309a003b76e0b8c902" target="_blank" rel="noopener">Verify AWS CP <span>↗</span></a></span></div></article>
       <article class="tl-item"><span class="tl-dot"></span><span class="tl-date">Jun – Sep 2026</span><div class="tl-card"><h3>Autonomous Systems Intern · Teific Technology</h3><p>Paid internship at ₹21,000/month. Four months training a YOLO detector (~10,000 aerial images, ~92% accuracy) to spot potholes, traffic and waterlogged roads, plus sensor integration.</p></div></article>
       <article class="tl-item"><span class="tl-dot"></span><span class="tl-date">Nov 2026</span><div class="tl-card"><h3>Building Bharat-Router</h3><p>A 200-prompt Hinglish benchmark and routing research, with experiments on Kaggle GPUs.</p></div></article>
     </div>
@@ -775,7 +785,7 @@ footer nav a:hover{color:var(--ink)}
     <dl class="facts">
       <div class="fact"><dt>Studying</dt><dd>B.Tech CSE (AI &amp; ML), KIET Group of Institutions, 2024–2028 · CGPA 8.4</dd></div>
       <div class="fact"><dt>Experience</dt><dd>Autonomous Systems Intern, Teific Technology (Jun–Sep 2026, paid ₹21,000/month) · Web Developer Intern, STBG Academy (2025)</dd></div>
-      <div class="fact"><dt>Certified</dt><dd>AWS Solutions Architect · AWS Cloud Practitioner (CLF-C02) · Intro to Machine Learning · Intro to Data Science</dd></div>
+      <div class="fact"><dt>Certified</dt><dd><span class="creds-row"><a class="cred" href="https://cp.certmetrics.com/amazon/en/public/verify/credential/fd661743e85a4bbaac3bacf95fa0b76b" target="_blank" rel="noopener">AWS Solutions Architect <span>↗</span></a><a class="cred" href="https://cp.certmetrics.com/amazon/en/public/verify/credential/3b0a0f6e329a4d309a003b76e0b8c902" target="_blank" rel="noopener">AWS Cloud Practitioner (CLF-C02) <span>↗</span></a><a class="cred" href="Teific_Internship_Certificate.pdf" target="_blank" rel="noopener">Teific internship certificate <span>↗</span></a></span><span class="courses">Also: Intro to Machine Learning · Intro to Data Science</span></dd></div>
       <div class="fact"><dt>Languages</dt><dd>Python (advanced), C++, Java, JavaScript, SQL</dd></div>
       <div class="fact"><dt>ML &amp; data</dt><dd>Machine learning, data preprocessing, TensorFlow, PyTorch, Power BI, Tableau</dd></div>
       <div class="fact"><dt>Cloud &amp; tools</dt><dd>AWS, Docker, Linux, CI/CD, Git, GitHub</dd></div>
@@ -844,7 +854,7 @@ footer nav a:hover{color:var(--ink)}
       <div class="faq-list">
         <details><summary>What are you working on right now?<span></span></summary><p>Bharat-Router: measuring how LLM routers and small models behave on Hinglish and code-mixed queries, and building a router that handles them better.</p></details>
         <details><summary>What is your core stack?<span></span></summary><p>Python for ML and backend work, SQL, and AWS for deployment. I use PyTorch and TensorFlow, Docker, Git and Linux day to day.</p></details>
-        <details><summary>Which certifications do you hold?<span></span></summary><p>AWS Certified Solutions Architect and AWS Certified Cloud Practitioner (CLF-C02), plus Introduction to Machine Learning and Introduction to Data Science.</p></details>
+        <details><summary>Which certifications do you hold?<span></span></summary><p>AWS Certified Solutions Architect and AWS Certified Cloud Practitioner (CLF-C02), plus Introduction to Machine Learning and Introduction to Data Science. You can verify them here: <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/fd661743e85a4bbaac3bacf95fa0b76b" target="_blank" rel="noopener">AWS SA ↗</a> · <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/3b0a0f6e329a4d309a003b76e0b8c902" target="_blank" rel="noopener">AWS CP ↗</a> · <a href="Teific_Internship_Certificate.pdf" target="_blank" rel="noopener">Teific internship ↗</a></p></details>
         <details><summary>Where are you based?<span></span></summary><p>Uttar Pradesh, India. I'm studying B.Tech CSE (AI &amp; ML) at KIET, batch of 2028.</p></details>
       </div>
     </div>
